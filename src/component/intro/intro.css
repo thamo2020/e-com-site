@@ -1,0 +1,137 @@
+.Intro {
+    display: flex;
+    height: 86vh;
+    margin-top: 6rem;
+  }
+  
+  /* left side styling */
+  .i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 45px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+  .i-button {
+    margin-left: 30px;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    margin-top: 0.5px;
+  }
+  .i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+  }
+  .i-icons > * {
+    transform: scale(0.5);
+  }
+  .i-icons > *:hover {
+    cursor: pointer;
+  }
+
+  .i-header {
+    font-weight: 50;
+    font-size: 50px;
+  }
+  /* right side styling */
+  .i-right {
+    flex: 1;
+    position: relative;
+  }
+  .i-right > * {
+    position: absolute;
+    z-index: 1;
+  }
+  .i-right-image {
+    width: 650px;
+    height: 500px;
+    margin-top: -30px;
+  }
+  /* blur */
+  
+
+  @media screen and (max-width: 1150px) {
+    .Intro {
+      flex-direction: column;
+      gap: 0rem;
+      height: 80rem;
+
+    }
+}
+
+  @media screen and (max-width: 850px) {
+    .Intro {
+      flex-direction: column;
+      gap: 0rem;
+      height: 60rem;
+      
+    }
+    .i-left {
+      margin: 0;
+      padding: 0;
+    }
+  
+    
+
+  }
+  @media screen and (max-width: 600px) {
+    .Intro {
+      flex-direction: column;
+      gap: 0rem;
+      height: 45rem;
+    }
+    .i-left .i-name > :nth-child(3) {
+      
+        font-weight: 60;
+        font-size: 25px;
+        color: var(--gray);
+        margin-top: 10px;
+    }
+  
+    .i-right-image {
+      width: 400px;
+      height: 400px;
+      margin-top: 10px;
+      margin-bottom: 200px;
+      
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .Intro {
+      flex-direction: column;
+      gap: 0rem;
+      height: 35rem;
+    }
+
+    .i-right-image {
+      width: 250px;
+      height: 200px;
+      
+      
+    }
+  }
+  
