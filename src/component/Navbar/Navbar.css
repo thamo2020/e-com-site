@@ -1,0 +1,104 @@
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+ 
+ }
+ 
+ .n-left {
+     flex: 1;
+     display: flex;
+     gap: 2rem;
+     align-items: center;
+ }
+ .n-name {
+     font-size: 1.3rem;
+     font-weight: bold;
+ }
+ 
+ .n-right {
+    
+     display:flex;
+     flex: 1;
+     align-items: center;
+     justify-content: center;
+     font-weight: 400;
+ }
+ .n-list {
+     flex: 10;
+ }
+ 
+ .n-list > ul
+ {
+     list-style: none;
+     display: flex;
+     gap: 2rem;
+     margin-right: 4rem;
+     margin-top: 4rem;
+ 
+ }
+ 
+ .n-list > ul >li:hover {
+     cursor: pointer;
+     color: var(--orange);
+ }
+ 
+ .n-button {
+     flex: 2;
+ }
+
+ .app__navbar-smallscreen {
+    display: none;
+  }
+  
+  .app__navbar-smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--orange);
+    transition: 0.5 ease;
+  
+    flex-direction: column;
+    z-index: 5;
+  }
+  
+  .app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  
+  .app__navbar-smallscreen-links {
+    list-style: none;
+  }
+  
+  .app__navbar-smallscreen-links > li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 2rem;
+    
+  }
+  
+  .app__navbar-smallscreen-links li:hover {
+    color: var(--white);
+  }
+  
+  
+  @media screen and (max-width:1150px) {
+    .n-list {
+      display: none;
+    }
+  
+    .app__navbar-smallscreen {
+      display: flex;
+    }
+  
+  }
+  
+  
