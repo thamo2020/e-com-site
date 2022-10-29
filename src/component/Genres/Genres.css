@@ -1,0 +1,13 @@
+.genereList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .genereList {
+        
+        display: none;
+      
+    }
+}

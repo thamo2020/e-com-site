@@ -2,6 +2,7 @@ import React,{ useState }  from 'react'
 import './Navbar.css'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import { GoX } from "react-icons/go";
+import {FiShoppingCart} from 'react-icons/fi'
 
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
           <li>Product</li>
           <li>About</li>
           <li>Contact</li>
-          <button className="button n-button" >Add to cart</button>
+          <button className="button n-button" ><FiShoppingCart/></button>
           
         </ul>
         
@@ -34,14 +35,14 @@ const Navbar = () => {
         <GiHamburgerMenu color='#050505' fontSize={27} onClick={() =>setToggleMenu(true)}/>
           
           {toggleMenu && (
-          <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
+          <div className='app__navbar-smallscreen_overlay'>
            
            <GoX fontSize={27} className="overlay__close" onClick={() =>setToggleMenu(false)}   />
             <ul className='app__navbar-smallscreen-links'>
-              <li className='p__opensans'> <a href="#home">Home</a> </li>
-              <li className='p__opensans'> <a href="#product">Product</a> </li>
-              <li className='p__opensans'> <a href="#about">About</a> </li>
-              <li className='p__opensans'> <a href="#contact">contact</a> </li>
+              <li > <a href="#home">Home</a> </li>
+              <li > <a href="#product">Product</a> </li>
+              <li > <a href="#about">About</a> </li>
+              <li > <a href="#contact">contact</a> </li>
             </ul>
           </div>
         )}

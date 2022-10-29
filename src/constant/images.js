@@ -6,8 +6,13 @@ import pic5 from '../assets/images/download 6.jpg';
 import pic6 from '../assets/images/download11.jpg';
 import pic7 from '../assets/images/download12.jpg';
 import pic8 from '../assets/images/download13.jpg';
+import pic9 from '../assets/images/download14.jpg';
+import pic10 from '../assets/images/download15.jpg';
+import pic11 from '../assets/images/download16.jpg';
+import pic12 from '../assets/images/download.jpg';
 import wave from '../assets/images/wave.png';
 import cart from '../assets/images/cart.png';
+
 export default {
     
     
@@ -19,6 +24,10 @@ export default {
     pic6,
     pic7,
     pic8,
+    pic9,
+    pic10,
+    pic11,
+    pic12,
     wave,
     cart
 }

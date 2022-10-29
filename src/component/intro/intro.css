@@ -34,28 +34,15 @@
     margin-top: 10px;
   }
   .i-button {
-    margin-left: 30px;
+    margin-left: 10px;
     align-items: center;
     width: 8rem;
     height: 3rem;
     margin-top: 0.5px;
   }
-  .i-icons {
-    margin-top: 3rem;
-    display: flex;
-    gap: 0rem;
-  }
-  .i-icons > * {
-    transform: scale(0.5);
-  }
-  .i-icons > *:hover {
-    cursor: pointer;
-  }
+  
 
-  .i-header {
-    font-weight: 50;
-    font-size: 50px;
-  }
+ 
   /* right side styling */
   .i-right {
     flex: 1;
@@ -101,7 +88,7 @@
     .Intro {
       flex-direction: column;
       gap: 0rem;
-      height: 45rem;
+      height: 50rem;
     }
     .i-left .i-name > :nth-child(3) {
       
@@ -115,12 +102,16 @@
       width: 400px;
       height: 400px;
       margin-top: 10px;
-      margin-bottom: 200px;
+      margin-bottom: 250px;
+      justify-content: center;
       
+    }
+    .i-button {
+      margin-bottom: 1rem;
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 300px) {
     .Intro {
       flex-direction: column;
       gap: 0rem;
@@ -128,10 +119,14 @@
     }
 
     .i-right-image {
-      width: 250px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 50px;
       
       
+    }
+    .i-button {
+      margin-bottom: 1rem;
     }
   }
   

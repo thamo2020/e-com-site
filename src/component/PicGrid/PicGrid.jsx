@@ -100,6 +100,7 @@ const PicGrid = () => {
                     </CardActionArea>
                     </Card>
             </div>
+            
             <div class="column">
                            
                            <Card sx={{ maxWidth: 345 }}>
@@ -188,6 +189,7 @@ const PicGrid = () => {
                                </CardActionArea>
                                </Card>
                        </div>
+                       
         </div>
     </div>
     </div>

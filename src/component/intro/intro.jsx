@@ -18,8 +18,13 @@ const Intro = () => {
          
             <p className="i-para">IF YOU CAN'T <br />
             STOP THINKING<br />
-            ABOUT IT ...</p>
-            <button className="i-button button"> BUY IT</button>
+            ABOUT IT,
+            BUY IT</p>
+            <div className="row">
+            <button className="i-button button">SIGN IN</button>
+            <button className="i-button button">SIGN UP</button>
+            </div>
+            
            
          
         </div>

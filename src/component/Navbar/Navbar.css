@@ -34,7 +34,7 @@
      display: flex;
      gap: 2rem;
      margin-right: 4rem;
-     margin-top: 4rem;
+     margin-top: 2rem;
  
  }
  
@@ -75,21 +75,18 @@
   
   .app__navbar-smallscreen-links {
     list-style: none;
+    
   }
   
   .app__navbar-smallscreen-links > li {
-    margin: 2rem;
+    margin-left: 10rem;
     cursor: pointer;
     color: var(--black);
     font-size: 2rem;
     
   }
   
-  .app__navbar-smallscreen-links li:hover {
-    color: var(--white);
-  }
-  
-  
+   
   @media screen and (max-width:1150px) {
     .n-list {
       display: none;
